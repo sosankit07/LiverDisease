@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserInput">
+
+     <TextView
+         android:id="@+id/title"
+         android:layout_width="278dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="13dp"
+         android:text="Liver Disease Detection"
+         android:textSize="25dp" />
+
+     <EditText
+         android:id="@+id/age"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginStart="42dp"
+         android:layout_marginTop="67dp"
+         android:ems="10"
+         android:hint="Enter Your Age"
+         android:inputType="number" />
+
+     <EditText
+         android:id="@+id/gender"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignStart="@+id/age"
+         android:layout_marginTop="113dp"
+         android:ems="10"
+         android:hint="Enter Your Gender eg: M or F"
+         android:inputType="textPersonName" />
+
+     <EditText
+         android:id="@+id/weight"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/gender"
+         android:ems="10"
+         android:hint="Enter Weight(in kgs)"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/height"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/weight"
+         android:ems="10"
+         android:hint="Enter Height(in cms)"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/bmi"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/height"
+         android:ems="10"
+         android:hint="Enter BMI"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/obesity"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/bmi"
+         android:ems="10"
+         android:hint="Enter Obesity"
+         android:inputType="number" />
+
+     <EditText
+         android:id="@+id/waist"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/obesity"
+         android:ems="10"
+         android:hint="Enter Waist Size"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/maxbp"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/waist"
+         android:ems="10"
+         android:hint="Enter Max Blood Pressure"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/minbp"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/maxbp"
+         android:ems="10"
+         android:hint="Enter Min Blood Pressure"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/goodcholestrol"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/minbp"
+         android:ems="10"
+         android:hint="Enter Good Cholestrol"
+         android:inputType="numberDecimal" />
+
+     <EditText
+         android:id="@+id/badcholestrol"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_alignStart="@+id/age"
+         android:layout_below="@+id/goodcholestrol"
+         android:ems="10"
+         android:inputType="numberDecimal"
+         android:hint="Enter Bad Cholestrol"
+         />
+
+     <EditText
+         android:id="@+id/totalcholestrol"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/badcholestrol"
+         android:layout_alignStart="@+id/age"
+         android:layout_marginBottom="0dp"
+         android:ems="10"
+         android:inputType="numberDecimal"
+         android:hint="Enter Total Cholestrol" />
+     <EditText
+         android:id="@+id/dyslipedimia"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/totalcholestrol"
+         android:layout_alignStart="@+id/age"
+         android:layout_marginBottom="0dp"
+         android:ems="10"
+         android:inputType="numberDecimal"
+         android:hint="Enter Dyslipedemia" />
+     <EditText
+         android:id="@+id/alcohol"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/dyslipedimia"
+         android:layout_alignStart="@+id/age"
+         android:layout_marginBottom="0dp"
+         android:ems="10"
+         android:inputType="numberDecimal"
+         android:hint="Enter Alcohol Consumption" />
+     <EditText
+         android:id="@+id/hypertension"
+         android:layout_width="279dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/alcohol"
+         android:layout_alignStart="@+id/age"
+         android:layout_marginBottom="0dp"
+         android:ems="10"
+         android:inputType="numberDecimal"
+         android:hint="Enter Hypertension" />
+
+     <Button
+         android:id="@+id/submit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/hypertension"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="-0dp"
+         android:text="Submit" />
+
+     <TextView
+         android:id="@+id/result"
+         android:layout_width="337dp"
+         android:layout_height="51dp"
+         android:layout_below="@+id/submit"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true" />
+
+ </RelativeLayout>
+</ScrollView>
